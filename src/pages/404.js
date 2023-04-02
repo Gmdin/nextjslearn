@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import Navbar from '../../components/Navbar';
+import Head from 'next/head';
 
 const errror = () => {
   const router=useRouter();
@@ -13,6 +14,9 @@ const errror = () => {
   },[])
   return (
     <div> 
+      <Head>
+        <title>Error Page</title>
+      </Head>
       <Navbar/>
       errror
 
